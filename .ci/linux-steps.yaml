@@ -13,7 +13,7 @@ steps:
   displayName: Install conda-build
 
 - bash: >
-    conda build . --no-anaconda-upload -c conda-forge
+    conda build . --no-anaconda-upload -c conda-forge -c zoq
   displayName: Conda build
 
 - task: PublishBuildArtifacts@1
