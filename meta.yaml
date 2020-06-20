@@ -1,5 +1,5 @@
 {% set name = "mlpack" %}
-{% set version = "3.3.1" %}
+{% set version = "3.3.2.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/mlpack/mlpack/archive/master.tar.gz
-  sha256: 310f95faa93b975c1489344ae4a499eddcd825ef9db76909eb680e1695cd1e36
+  sha256: 1c5c14b390ecaee17bd7c6cd01f25e4bca41c66bc510eefefaa300d86ceb19a6
 
 build:
   number: 0
@@ -31,7 +31,7 @@ requirements:
     - armadillo >=6.500.0
     - pytest-runner
     - openblas
-    - ensmallen >=2.10.0
+    - ensmallen >=2.12.1.1
     - libcblas
     - libblas
   run:
@@ -41,7 +41,7 @@ requirements:
     - armadillo >=6.500.0
     - openblas
     - {{ pin_compatible('numpy') }}
-    - ensmallen >=2.10.0
+    - ensmallen >=2.12.1.1
 test:
   imports:
     - mlpack
