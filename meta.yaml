@@ -1,11 +1,12 @@
+{% set name = "mlpack" %}
 {% set version = "3.3.1" %}
 
 package:
-  name: mlpack
+  name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: http://www.mlpack.org/files/mlpack-{{ version }}.tar.gz
+  url: https://github.com/mlpack/mlpack/archive/master.tar.gz
   sha256: 310f95faa93b975c1489344ae4a499eddcd825ef9db76909eb680e1695cd1e36
 
 build:
