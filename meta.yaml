@@ -44,9 +44,6 @@ requirements:
     - {{ pin_compatible('numpy') }}
     - ensmallen >=2.12.1.1
 test:
-  imports:
-    - mlpack
-    - mlpack.knn
   commands:
     - mlpack_knn --help
 
