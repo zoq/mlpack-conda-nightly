@@ -12,9 +12,10 @@ steps:
     conda-build
   displayName: Install conda-build
 
-- bash: >
+- bash: | 
     conda create -n build python=3.6
     conda activate build
+    conda install --yes --quiet -buld
     conda build . --no-anaconda-upload -c conda-forge -c zoq
   displayName: Conda build
 
