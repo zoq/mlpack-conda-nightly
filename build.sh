@@ -24,7 +24,7 @@ cmake \
 	-DCMAKE_INSTALL_LIBDIR=lib \
 	..
 
-make
+make -j2
 make install
 
 

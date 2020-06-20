@@ -37,6 +37,7 @@ requirements:
   run:
     - boost
     - python
+    - boost
     - pandas  >=0.15.0
     - armadillo >=6.500.0
     - openblas
