@@ -19,6 +19,10 @@ steps:
   displayName: Install conda-build
 
 - bash: >
+    conda install boost 
+  displayName: Conda build
+
+- bash: >
     conda build . --no-anaconda-upload -c conda-forge -c zoq
   displayName: Conda build
 
