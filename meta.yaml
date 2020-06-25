@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://github.com/mlpack/mlpack/archive/master.tar.gz
-  sha256: 1c5c14b390ecaee17bd7c6cd01f25e4bca41c66bc510eefefaa300d86ceb19a6
+  sha256: 3e0e106a11123f205711c6d1cfa8cab71576ab0affe4c5cad064e695e3ba6287
 
 build:
-  number: 0
+  number: 1
   skip: true  # [win or osx]
 
 requirements:
@@ -24,8 +24,8 @@ requirements:
   host:
     - cython >=0.24
     - setuptools
-    - boost
     - python
+    - boost >=1.69.0
     - numpy
     - pandas  >=0.15.0
     - armadillo >=6.500.0
@@ -35,10 +35,8 @@ requirements:
     - libcblas
     - libblas
   run:
-    - boost
-    - boost-cpp
     - python
-    - boost
+    - {{ pin_compatible('boost', max_pin='x.x.x') }}
     - pandas  >=0.15.0
     - armadillo >=6.500.0
     - openblas
@@ -61,4 +59,4 @@ about:
 
 extra:
   recipe-maintainers:
-    - zoq 
+    - zoq
