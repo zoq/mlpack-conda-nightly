@@ -31,7 +31,7 @@ requirements:
     - armadillo >=6.500.0
     - pytest-runner
     - openblas
-    - ensmallen >=None
+    - ensmallen >=2.12.1.1
     - libcblas
     - libblas
   run:
@@ -41,7 +41,7 @@ requirements:
     - armadillo >=6.500.0
     - openblas
     - {{ pin_compatible('numpy') }}
-    - ensmallen >=None
+    - ensmallen >=2.12.1.1
 about:
   home: http://www.mlpack.org
   license: BSD-3-Clause
