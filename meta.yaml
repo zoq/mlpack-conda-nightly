@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/mlpack/mlpack/archive/master.tar.gz
-  sha256: 5331e60fa47a2809ed3680d17752670713d9ff19e4824b6b3af1e16a2bac5915
+  sha256: cfcb2556880c355654652357ab369438776f00a49095afe475bce62dd352685b 
 
 build:
   number: 1
